@@ -1,5 +1,5 @@
 msf_welcome:
-    path:     /
+    path:     /msf
     defaults: {_controller: MyScentFactoryEcommerceBundle:Default:index }
 
 msf_homepage:

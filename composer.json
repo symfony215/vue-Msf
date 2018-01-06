@@ -7,7 +7,9 @@
         "psr-4": {
             "AppBundle\\": "src/AppBundle",
             "MyScentFactory\\EcommerceBundle\\": "src/MyScentFactory/EcommerceBundle",
-            "MyScentFactory\\BlogBundle\\": "src/MyScentFactory/BlogBundle"
+            "MyScentFactory\\BlogBundle\\": "src/MyScentFactory/BlogBundle",
+            "Ecommerce\\EcommerceBundle\\": "src/Ecommerce/EcommerceBundle",
+            "Pages\\PagesBundle\\": "src/Pages/PagesBundle"
         },
         "classmap": [ "app/AppKernel.php", "app/AppCache.php" ]
     },
@@ -16,7 +18,7 @@
         "files": [ "vendor/symfony/symfony/src/Symfony/Component/VarDumper/Resources/functions/dump.php" ]
     },
     "require": {
-        "php": ">=5.5.9",
+        "php": ">=7.1.8",
         "doctrine/doctrine-bundle": "^1.6",
         "doctrine/orm": "^2.5",
         "incenteev/composer-parameter-handler": "^2.0",
@@ -25,12 +27,12 @@
         "symfony/monolog-bundle": "^3.1.0",
         "symfony/polyfill-apcu": "^1.0",
         "symfony/swiftmailer-bundle": "^2.3.10",
-        "symfony/symfony": "3.3.*",
+        "symfony/symfony": "4.0.3",
         "twig/twig": "^1.0||^2.0"
     },
     "require-dev": {
         "sensio/generator-bundle": "^3.0",
-        "symfony/phpunit-bridge": "^3.0"
+        "symfony/phpunit-bridge": "^4.0"
     },
     "scripts": {
         "symfony-scripts": [
@@ -50,7 +52,7 @@
     },
     "config": {
         "platform": {
-            "php": "5.5.9"
+            "php": "7.1.8"
         },
         "sort-packages": true
     },

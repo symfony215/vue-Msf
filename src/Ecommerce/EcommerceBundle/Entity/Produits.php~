@@ -1,0 +1,159 @@
+<?php
+
+namespace Ecommerce\EcommerceBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Produits
+ *
+ * @ORM\Table(name="produits")
+ * @ORM\Entity(repositoryClass="Ecommerce\EcommerceBundle\Repository\ProduitsRepository")
+ */
+class Produits
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="nom_produit", type="string", length=255)
+     */
+    private $nomProduit;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="categorie_produit", type="string", length=255)
+     */
+    private $categorieProduit;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="description", type="string", length=255)
+     */
+    private $description;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="prix", type="string", length=255)
+     */
+    private $prix;
+
+
+    /**
+     * Get id
+     *
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set nomProduit
+     *
+     * @param string $nomProduit
+     *
+     * @return Produits
+     */
+    public function setNomProduit($nomProduit)
+    {
+        $this->nomProduit = $nomProduit;
+
+        return $this;
+    }
+
+    /**
+     * Get nomProduit
+     *
+     * @return string
+     */
+    public function getNomProduit()
+    {
+        return $this->nomProduit;
+    }
+
+    /**
+     * Set cat�egorieProduit
+     *
+     * @param string $cat�egorieProduit
+     *
+     * @return Produits
+     */
+    public function setCat�egorieProduit($cat�egorieProduit)
+    {
+        $this->cat�egorieProduit = $cat�egorieProduit;
+
+        return $this;
+    }
+
+    /**
+     * Get cat�egorieProduit
+     *
+     * @return string
+     */
+    public function getCat�egorieProduit()
+    {
+        return $this->cat�egorieProduit;
+    }
+
+    /**
+     * Set description
+     *
+     * @param string $description
+     *
+     * @return Produits
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
+
+        return $this;
+    }
+
+    /**
+     * Get description
+     *
+     * @return string
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * Set prix
+     *
+     * @param string $prix
+     *
+     * @return Produits
+     */
+    public function setPrix($prix)
+    {
+        $this->prix = $prix;
+
+        return $this;
+    }
+
+    /**
+     * Get prix
+     *
+     * @return string
+     */
+    public function getPrix()
+    {
+        return $this->prix;
+    }
+}
+

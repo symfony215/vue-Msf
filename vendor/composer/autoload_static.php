@@ -51,6 +51,7 @@ class ComposerStaticInit26795201925352815ca0e77fae1eaad1
             'Psr\\Link\\' => 9,
             'Psr\\Container\\' => 14,
             'Psr\\Cache\\' => 10,
+            'Pages\\PagesBundle\\' => 18,
         ),
         'M' => 
         array (
@@ -65,6 +66,10 @@ class ComposerStaticInit26795201925352815ca0e77fae1eaad1
         'F' => 
         array (
             'Fig\\Link\\' => 9,
+        ),
+        'E' => 
+        array (
+            'Ecommerce\\EcommerceBundle\\' => 26,
         ),
         'D' => 
         array (
@@ -181,6 +186,10 @@ class ComposerStaticInit26795201925352815ca0e77fae1eaad1
         array (
             0 => __DIR__ . '/..' . '/psr/cache/src',
         ),
+        'Pages\\PagesBundle\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/Pages/PagesBundle',
+        ),
         'MyScentFactory\\EcommerceBundle\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src/MyScentFactory/EcommerceBundle',
@@ -200,6 +209,10 @@ class ComposerStaticInit26795201925352815ca0e77fae1eaad1
         'Fig\\Link\\' => 
         array (
             0 => __DIR__ . '/..' . '/fig/link-util/src',
+        ),
+        'Ecommerce\\EcommerceBundle\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/Ecommerce/EcommerceBundle',
         ),
         'Doctrine\\Instantiator\\' => 
         array (

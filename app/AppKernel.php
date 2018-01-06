@@ -18,6 +18,8 @@ class AppKernel extends Kernel
             new AppBundle\AppBundle(),
             new MyScentFactory\EcommerceBundle\MyScentFactoryEcommerceBundle(),
             new MyScentFactory\BlogBundle\MyScentFactoryBlogBundle(),
+            new Ecommerce\EcommerceBundle\EcommerceEcommerceBundle(),
+            new Pages\PagesBundle\PagesBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

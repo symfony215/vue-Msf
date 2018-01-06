@@ -1,3 +1,11 @@
+pages:
+    resource: "@PagesBundle/Resources/config/routing.yml"
+    prefix:   /
+
+ecommerce_ecommerce:
+    resource: "@EcommerceEcommerceBundle/Resources/config/routing.yml"
+    prefix:   /
+
 my_scent_factory_blog:
     resource: "@MyScentFactoryBlogBundle/Resources/config/routing.yml"
     prefix:   /
