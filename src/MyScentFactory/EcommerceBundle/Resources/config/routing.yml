@@ -1,0 +1,19 @@
+msf_welcome:
+    path:     /
+    defaults: {_controller: MyScentFactoryEcommerceBundle:Default:index }
+
+msf_homepage:
+    path:     /home
+    defaults: {_controller: MyScentFactoryEcommerceBundle:Default:home }
+
+inscription:
+    path: /inscription
+    defaults: {_controller:MyScentFactoryEcommerceBundle:Subscribe:Subscribe }
+
+connexion:
+    path: /connexion/{ids}
+    defaults: {_controller:MyScentFactoryEcommerceBundle:Subscribe:Login }
+
+espace_client:
+    path: /espace_client
+    defaults: {_controller:MyScentFactoryEcommerceBundle:Default:Client }

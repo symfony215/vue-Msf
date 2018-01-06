@@ -1,0 +1,13 @@
+{% extends '::base.html.twig'%}
+
+{% block body %}
+    {% block home %}
+        <div class="container">
+            animated slider here:
+
+        </div>
+        {% for picture in pictures %}
+            {{  picture }}<br/>
+        {% endfor %}
+    {% endblock %}
+{% endblock %}

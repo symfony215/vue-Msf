@@ -1,0 +1,20 @@
+{% extends "::base.html.twig" %}
+{% block body %}
+Bienvenue dans votre espace {{ blog }} chère {{ client }}
+<br/><br/>
+
+    Nos produits:
+    {% for favoris in favoris %}
+        {{ favoris }}<br/>
+    {% endfor %}
+    <br/><br/>
+{% set produit = 'essence' %}
+
+    votre selection {{ produit|upper }}<br/><br/>
+{% for i in 0..10 %}
+    {{ i }}<br/>
+{% endfor %}
+
+    {{ "now"|date("d-m-y") }}
+    <br/><br/>
+{% endblock %}

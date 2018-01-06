@@ -1,0 +1,4 @@
+services:
+#    my_scent_factory_ecommerce.example:
+#        class: MyScentFactory\EcommerceBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

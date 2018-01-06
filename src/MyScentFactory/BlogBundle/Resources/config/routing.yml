@@ -1,0 +1,13 @@
+msf_blog:
+    path:     /blog
+    defaults: { _controller: MyScentFactoryBlogBundle:Default:index }
+
+msf_blog_event:
+    path:     /blog/event.{_format}
+    defaults: { _controller: "MyScentFactoryBlogBundle:Default:event", _format: html }
+    requirements:
+        _format : html
+
+msf_blog_avis:
+    path:     /blog/avis
+    defaults: { _controller: MyScentFactoryBlogBundle:Default:avis }

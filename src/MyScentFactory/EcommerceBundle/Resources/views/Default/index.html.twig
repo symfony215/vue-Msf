@@ -1,0 +1,14 @@
+{% extends "::base.html.twig" %}
+
+{% block navigation %}
+
+{% endblock  %}
+
+{% block body %}
+    {% set creatrice = 'Niyagalé Dramé' %}
+    Article published: {{ "now"|date("d/m/y") }} <br><br>
+Hello! <br>
+    Bienvenue chez MSF<br><br>
+    Je vous présente la créatrice {{ creatrice }}
+    <br><br>
+{% endblock %}
