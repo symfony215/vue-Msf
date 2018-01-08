@@ -21,3 +21,11 @@ livraisons:
 validation:
     path:     /panier/validation
     defaults: { _controller: EcommerceEcommerceBundle:Panier:validation }
+
+ajout_produits:
+    path:     /ajout/produit
+    defaults: { _controller: EcommerceEcommerceBundle:ProduitAdd:produit }
+
+ajout_support:
+    path:     /ajout/support
+    defaults: { _controller: EcommerceEcommerceBundle:SupportAdd:support }
